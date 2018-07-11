@@ -27,9 +27,14 @@ var userRouter=require('./routes/users')
 var msgsRouter=require('./routes/msgs')
 
 app.use('/user',userRouter)
+
 app.use('/msg',msgsRouter)
 
-
+app.get('/',function(req,res,next){
+  res.render('login',{
+    'title':'登陆'
+  })
+})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

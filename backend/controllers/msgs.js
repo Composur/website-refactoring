@@ -2,6 +2,7 @@ const Msg = require('../models/msgs')
 
 // team add page
 exports.add = function(req, res) {
+  
   let _msg
   _msg = new Msg({
     // name: '',

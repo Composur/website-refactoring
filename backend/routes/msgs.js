@@ -9,5 +9,5 @@ router.get('/allMsgs', function(req, res, next) {
 });
 
 // Msgs save
-router.post('/subscribe',Msg.save)
+router.post('/subscribe',Msg.add)
 module.exports = router;
