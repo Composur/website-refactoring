@@ -14,9 +14,4 @@ router.get('/login', function(req, res, next) {
   });
 });
 
-router.get('/msgs', function(req, res, next) {
-  res.render('msgs',{
-    // 'name':'msgs'
-  });
-});
 module.exports = router;

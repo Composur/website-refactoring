@@ -1,4 +1,5 @@
 var express = require('express');
+var Msg=require('../controllers/msgs')
 var router = express.Router();
 /* GET users listing. */
 router.get('/allMsgs', function(req, res, next) {
@@ -6,4 +7,7 @@ router.get('/allMsgs', function(req, res, next) {
     name:'123'
   });
 });
+
+// Msgs save
+router.post('/subscribe',Msg.save)
 module.exports = router;
